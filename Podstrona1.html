@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2 class ="h2">Menu</h2>
+     
+    
+    <a href = "strona.html">Test</a><br>
+    <a href = "strona.html">Podstrona1</a><br>
+    <a href = "strona.html">Podstrona2</a><br>
+    <p id="intro">Finding HTML Elements by Id</p>
+<p>This example demonstrates the <b>getElementsById</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+const element = document.getElementById("intro");
+
+document.getElementById("demo").innerHTML = 
+"The text from the intro paragraph is: " + element.innerHTML;
+
+</script>
+
+<h2>The input Element</h2>
+
+<form action="/action_page.php">
+  <label for="fname">number:</label><br>
+  <input type="text" id="equals" name="equals"><br><br>
+  <input type="submit" value="Submit"><br>  
+  <form action="/action_page.php">
+    <label for="cars">Choose a character:</label>
+    <select id="cars" name="cars">
+      <option value="volvo">+</option>
+      <option value="saab">-</option>
+      <option value="fiat">*</option>
+      <option value="audi">/</option>
+    </select>
+    <input type="submit"><br>
+    <label for="fname">number:</label><br>
+  <input type="text" id="equals" name="equals"><br>
+  <input type="submit" value="Submit"><br>
+  
+
+</form>
+
+</body>
+</html>

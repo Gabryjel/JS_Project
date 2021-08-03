@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>HTML liczpy</title>
+
+
+
+</head>
+<body>
+<input type ="number"id="anything"></input>
+<input type ="number"id="czesc"></input>
+<p id = "slon"></p>
+<p type="text" id="imie"></p>
+
+<input type="button"value="+"onclick="pokazImie('suma')">
+<input type="button"value="-"onclick="pokazImie('odejmowanie')">
+<input type="button"value="*"onclick="pokazImie('mnozenie')">
+<input type="button"value="/"onclick="pokazImie('dzielenie')">
+<script>
+    
+    function pokazImie(operacja){
+        let wartosc, wartosc2;
+        let slon;
+        let czesc;
+        let wynik;
+        
+
+        let anything;
+anything = document.getElementById("anything")
+console.log(anything)
+wartosc = parseInt(anything.value);
+//alert(wartosc)
+slon = document.getElementById("slon");
+
+czesc = document.getElementById("czesc");
+wartosc2 = parseInt(czesc.value);
+console.log(anything)
+
+if(operacja == "suma"){
+wynik = wartosc + wartosc2;
+    }
+
+if(operacja == "odejmowanie"){
+ wynik = wartosc - wartosc2;
+}
+if(operacja == "mnozenie"){
+   wynik = wartosc *  wartosc2;
+}   
+if(operacja == "dzielenie"){
+wynik = wartosc / wartosc2;
+}
+slon.innerHTML = wynik;
+}
+</script>
+</body>
+
+</html>

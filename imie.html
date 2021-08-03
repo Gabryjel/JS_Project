@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>HTML Imie</title>
+<style>
+#imie{
+color:red;
+font-size:20px;
+
+
+}
+.alert{
+font-size:25px;
+color:blue;
+
+}
+</style>
+
+
+</head>
+<body>
+<input id="anything"></input>
+<p id = "slon"></p>
+
+
+
+
+<p type="text" id="imie"></p>
+
+<input type="button" onclick="pokazImie();">
+
+<script>
+    
+    function pokazImie(){
+        let wartosc;
+        let slon
+
+        let anything;
+anything = document.getElementById("anything")
+console.log(anything)
+wartosc = anything.value
+//alert(wartosc)
+slon = document.getElementById("slon")
+slon.innerHTML=anything.value;
+
+    }
+</script>
+</body>
+
+</html>

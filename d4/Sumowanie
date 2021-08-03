@@ -1,0 +1,9 @@
+a = 1
+b = 3
+c = 5
+d = 8
+e = 20
+f = 4
+g = 100
+h = (a+b+c+d+e+f+g)/7
+console.log(h);
